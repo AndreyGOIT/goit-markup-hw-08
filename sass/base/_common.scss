@@ -1,0 +1,67 @@
+.navigation__list,
+.navigation-contacts,
+.filter-list,
+.examples-list,
+.address-list,
+.our-advantages__list,
+.our-occupation__list,
+.our-team__list,
+.soc-icons-section__list {
+    list-style: none;
+}
+.logo-link-nav,
+.navigation__list-link,
+.navigation-contacts__mail,
+.navigation-contacts__phone,
+.logo-link-bottom,
+.address-list__address-link,
+.address-list__mail,
+.address-list__phone,
+.examples-list__link {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--top-color);
+}

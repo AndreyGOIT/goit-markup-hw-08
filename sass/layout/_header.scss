@@ -1,0 +1,119 @@
+.page-header {
+    background: var(--top-color);
+    /* Установит стили нинжней рамки */
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--header-bottom-line);
+}
+
+.up,
+.navigation,
+.navigation__list,
+.navigation-contacts,
+.navigation-contacts__item,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation__list {
+    margin-left: 90px;
+}
+
+.navigation__list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-contacts {
+    margin-left: auto;
+}
+
+.navigation-contacts__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.logo-black {
+    color: var(--text-logo-black);
+}
+
+.navigation__list-item {
+    position: relative;
+    padding-top: 32px;
+    height: 80px;
+}
+
+/*--подчеркивание текущей страницы--*/
+.current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    padding-bottom: 0px;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+.navigation__list-link,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    /*  Задаём значения перехода  */
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* электронка и телефон фирмы в шапке */
+
+.navigation-contacts__mail,
+.navigation-contacts__phone {
+    height: 16px;
+    color: var(--navigation-contacts-color);
+}
+
+.envelope-icon,
+.mobile-icon {
+    fill: var(--navigation-contacts-color);
+    height: 16px;
+    margin-right: 10px;
+    /*  Задаём значения перехода  */
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
+
+/* При ховере меняем значения анимируемых свойств */
+.navigation__list-link:hover,
+.navigation__list-link:focus {
+    color: var(--accent-color);
+}
+
+.navigation-contacts__mail:focus .envelope-icon,
+.navigation-contacts__mail:hover .envelope-icon {
+    fill: var(--accent-color);
+}
+
+.navigation-contacts__mail:focus,
+.navigation-contacts__mail:hover {
+    color: var(--accent-color);
+}
+
+.navigation-contacts__phone:hover .mobile-icon,
+.navigation-contacts__phone:focus .mobile-icon {
+    fill: var(--accent-color);
+}
+
+.navigation-contacts__phone:hover,
+.navigation-contacts__phone:focus {
+    color: var(--accent-color);
+}

@@ -1,0 +1,35 @@
+.our-occupation {
+    padding-top: 0px;
+}
+.our-occupation__list,
+.our-team__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.our-occupation__item:not(:last-child) {
+    margin-right: 30px;
+}
+.our-occupation__thumb {
+    position: relative;
+}
+.our-occupation__thumb>.our-occupation__label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-bottom-left-radius: 4px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--label-bg-color);
+    color: var(--top-color);
+}
