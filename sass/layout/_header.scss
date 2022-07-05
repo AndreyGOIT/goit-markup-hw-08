@@ -1,6 +1,27 @@
+.navigation__list {
+    display: none;
+}
+.navigation-contacts {
+    display: none;
+}
+.page-header {
+    padding-top: 10px;
+}
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-menu-open-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+/* 
 .page-header {
     background: var(--top-color);
-    /* Установит стили нинжней рамки */
+    
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--header-bottom-line);
@@ -43,9 +64,9 @@
     padding-top: 32px;
     height: 80px;
 }
-
+ */
 /*--подчеркивание текущей страницы--*/
-.current::after {
+/* .current::after {
     content: "";
     position: absolute;
     display: block;
@@ -66,14 +87,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    /*  Задаём значения перехода  */
+    
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* электронка и телефон фирмы в шапке */
-
+/* 
 .navigation-contacts__mail,
 .navigation-contacts__phone {
     height: 16px;
@@ -85,15 +106,15 @@
     fill: var(--navigation-contacts-color);
     height: 16px;
     margin-right: 10px;
-    /*  Задаём значения перехода  */
+    
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
 }
-
+ */
 /* При ховере меняем значения анимируемых свойств */
-.navigation__list-link:hover,
+/* .navigation__list-link:hover,
 .navigation__list-link:focus {
     color: var(--accent-color);
 }
@@ -117,3 +138,4 @@
 .navigation-contacts__phone:focus {
     color: var(--accent-color);
 }
+ */
