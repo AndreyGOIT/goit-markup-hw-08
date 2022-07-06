@@ -6,6 +6,8 @@
 }
 .page-header {
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aquamarine;
 }
 .page-header__container {
     display: flex;
@@ -15,8 +17,12 @@
 .mobile-menu-open-btn {
     border: none;
     background-color: transparent;
+    margin-right: -5px;
     padding: 0;
     line-height: 0;
+}
+.logo-black {
+    color: var(--text-logo-black);
 }
 /* 
 .page-header {
@@ -55,9 +61,7 @@
     margin-right: 30px;
 }
 
-.logo-black {
-    color: var(--text-logo-black);
-}
+
 
 .navigation__list-item {
     position: relative;
