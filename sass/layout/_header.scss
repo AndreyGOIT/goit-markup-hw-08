@@ -7,7 +7,7 @@
 .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 .page-header__container {
     display: flex;
@@ -21,9 +21,14 @@
     padding: 0;
     line-height: 0;
 }
+.mobile-menu-open-btn__icon:hover,
+.mobile-menu-open-btn__icon:focus {
+    fill: var(--accent-color);
+}
 .logo-black {
     color: var(--text-logo-black);
 }
+
 /* 
 .page-header {
     background: var(--top-color);
