@@ -1,17 +1,22 @@
+/* фоновый цвет подвала */
+.bottom {
+    background: var(--hero-bottom-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .down {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
-.bottom-left-side {
+/* .bottom-left-side {
     margin-right: 70px;
-}
-
+} */
 .logo-white {
     color: var(--top-color);
 }
-
 /* адрес в подвале страницы */
 .address {
     margin-top: 20px;
@@ -49,13 +54,6 @@
     &:focus {
         color: var(--accent-color);
     }
-}
-
-/* фоновый цвет подвала */
-.bottom {
-    background: var(--hero-bottom-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 /* раздел с иконками соцсетей */
@@ -157,3 +155,6 @@
     padding-right: 28px;
     border: transparent;
 }
+
+/* flex-direction: row;
+align-items: baseline; */

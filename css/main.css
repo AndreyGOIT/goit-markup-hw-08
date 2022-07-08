@@ -438,7 +438,7 @@ body {
 .our-advantages__main-title,
 .our-occupation__main-title,
 .our-team__main-title,
-.our-clients {
+.our-clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -767,16 +767,24 @@ body {
     color: var(--accent-color);
   }
 }
+/* фоновый цвет подвала */
+.bottom {
+  background: var(--hero-bottom-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .down {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.bottom-left-side {
-  margin-right: 70px;
-}
-
+/* .bottom-left-side {
+    margin-right: 70px;
+} */
 .logo-white {
   color: var(--top-color);
 }
@@ -816,13 +824,6 @@ body {
 .address-list__phone:hover,
 .address-list__phone:focus {
   color: var(--accent-color);
-}
-
-/* фоновый цвет подвала */
-.bottom {
-  background: var(--hero-bottom-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* раздел с иконками соцсетей */
@@ -921,6 +922,8 @@ body {
   border: transparent;
 }
 
+/* flex-direction: row;
+align-items: baseline; */
 .hero {
   background-size: auto auto;
   max-width: 767px;
@@ -1103,6 +1106,11 @@ body {
     margin-right: 30px;
   }
 }
+.our-occupation__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .our-occupation {
     display: none;
@@ -1280,19 +1288,31 @@ body {
     color: var(--navigation-contacts-color);
 } */
 .our-clients {
-  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.our-clients__container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.our-clients-title {
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
 }
 
 .our-clients-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
 }
 
 .our-clients-list__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
-}
-.our-clients-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .our-clients-list__icon {
@@ -1319,6 +1339,37 @@ body {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .our-clients-list__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .our-clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+
+  .our-clients-list {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+
+  .our-clients-list__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  .our-clients-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .examples-list {
   display: flex;
   flex-wrap: wrap;
