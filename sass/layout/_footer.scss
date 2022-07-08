@@ -11,11 +11,21 @@
     padding-left: 0px;
     padding-right: 0px;
 }
-/* .bottom-left-side {
-    margin-right: 70px;
-} */
+.address-list__item,
+.soc-icons-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-left-side {
+    margin-bottom: 60px;
+}
 .logo-white {
     color: var(--top-color);
+}
+.logo-bottom {
+    display: flex;
+    justify-content: center;
 }
 /* адрес в подвале страницы */
 .address {
@@ -98,19 +108,17 @@
         background-color: var(--accent-color);
     }
 }
-
 .soc-med-icon-bottom {
     fill: var(--top-color);
 }
-
 .bottom-right-side {
     display: flex;
-    margin-right: auto;
+    margin-bottom: 60px;
 }
 
 /*-- секция подписки --*/
 .subscription-section {
-    padding-left: auto;
+    width: 100%;
 }
 
 .subscription-section-form {
@@ -120,7 +128,8 @@
 }
 
 .subscription-section-form__title {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -133,12 +142,15 @@
 
 .email-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subscription-section-form__input {
-    width: 358px;
+    display: block;
+    width: 100%;
     height: 50px;
-    margin-right: 10px;
+    margin-bottom: 20px;
     padding: 15px;
     color: #FFFFFF;
     background-color: var(--hero-bottom-color);
@@ -155,6 +167,60 @@
     padding-right: 28px;
     border: transparent;
 }
-
-/* flex-direction: row;
-align-items: baseline; */
+// 768 - планшеты
+@media screen and (min-width: 768px) {
+    .bottom-sides-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bottom-left-side {
+        margin-left: 60px;
+    }
+    .bottom-right-side {
+        margin-right: 75px;
+    }
+    .subscription-section-form__input {
+        width: 450px;
+    }
+}
+    
+// 1200 - десктопы
+@media screen and (min-width: 1200px) {
+    .down {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .bottom-left-side {
+        display: flex;
+        flex-direction: column;        
+        align-items: flex-start;
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bottom-right-side {
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+    .subscription-section-form__title {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .email-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .subscription-section-form__input {
+        width: 358px;
+        margin-bottom: 0px;
+    }
+}
