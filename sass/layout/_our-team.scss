@@ -1,13 +1,89 @@
 .our-team {
     background: var(--our-team-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
+.our-team__container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.our-team__main-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
 .our-team__item {
+    width: 450px;
+}
+.img-main {
+    width: 450px;
+    height: 460px;
+}
+.our-team__text-block {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-color: var(--top-color);
+}
+.our-team__text-block-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.our-team__text-block-text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--navigation-contacts-color);
+}
+// 768- планшеты
+@media screen and (min-width: 768px) {
+    .our-team__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+    }
+    .our-team__item {
+        width: 354px;
+    }
+    
+    .img-main {
+        width: 354px;
+        height: 374px;
+    }
+}
+// 1200 - десктопы
+@media screen and (min-width: 1200px) {
+    .our-team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .our-team__list {
+        flex-wrap: nowrap; 
+        gap: 0px;       
+    }
+    .our-team__item {
+        width: 270px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    .img-main {
+        width: 270px;
+        height: 260px;
+    }
+}
+/* .our-team__item {
     background: var(--top-color);
-    /* material shadow v1 */
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);*/
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
@@ -25,7 +101,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
@@ -35,8 +110,7 @@
     font-size: 16px;
     line-height: 1.19;
     margin-bottom: 16px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--navigation-contacts-color);
-}
+} */
