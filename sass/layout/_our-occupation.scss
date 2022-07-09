@@ -28,8 +28,11 @@
     
     .our-occupation__thumb {
         position: relative;
+        max-width: 370px;
+        min-width: 320px;
+        margin: 0 auto;
     }
-    
+  
     .our-occupation__thumb>.our-occupation__label {
         position: absolute;
         display: flex;
