@@ -3,8 +3,7 @@
     flex-direction: column;
 }
 .examples-list-img {
-    width: 450px;
-    height: 294px;
+    max-width: 100%;
 }
 .examples-list__title {
     margin-bottom: 5px;
@@ -29,6 +28,8 @@
     }
 }
 .item-up-part {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -79,6 +80,12 @@
     border-left-style: solid;
     border-left-color: var(--portfolio-border-line);
 }
+// до 767 - мобилки
+@media screen and (max-width: 767px) {
+    .examples-list-img {
+        max-width: 767px;
+    }
+}
 // 768 - планшеты
 @media screen and (min-width: 768px) {
     .examples-list {
@@ -104,7 +111,6 @@
 @media screen and (min-width: 1200px) {
     .examples-list-img {
         width: 370px;
-        height: 294px;
     }
     .examples-list__item {
         width: 370px;
@@ -112,9 +118,10 @@
     .examples-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 0px;
+        flex-basis: calc((100% - 60px) / 3);
+        gap: 30px;
     }
-    .examples-list__item {
+    /* .examples-list__item {
         display: flex;
         background: var(--top-color);
     
@@ -126,5 +133,5 @@
             margin-right: 30px;
         }
     
-    }
+    } */
 }

@@ -1,14 +1,16 @@
 .page-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /*background-color: aquamarine;*/
+    background: var(--top-color);
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--header-bottom-line);
 }
 .page-header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo-black {
     color: var(--text-logo-black);
 }
@@ -26,11 +28,17 @@
         margin-right: -5px;
         padding: 0;
         line-height: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }    
     .mobile-menu-open-btn__icon:hover,
     .mobile-menu-open-btn__icon:focus {
         fill: var(--accent-color);
     }
+    .current {
+        color: var(--accent-color);
+    }
+    
 }
 // 768- планшеты
 @media screen and (min-width: 768px) {
@@ -125,14 +133,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
-    .page-header {
-        background: var(--top-color);
-        padding-top: 0;
-        padding-bottom: 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--header-bottom-line);
-    }
+    
 }
 
 // 1200 - десктопы

@@ -64,34 +64,37 @@
                             <a class="mobile-menu__link" href="index.html">Студия</a>
                         </li>
                         <li class="mobile-menu__item">
-                            <a class="mobile-menu__link" href="portfolio.html">Портфолио</a>
+                            <a class="mobile-menu__link current" href="portfolio.html">Портфолио</a>
                         </li>
                         <li class="mobile-menu__item">
                             <a class="mobile-menu__link" href="">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="mobile-menu__contacts">
-                        <li class="mobile-menu__phone">
-                            <a href="tel:+380961111111" class="mob-men-tel">+38 096 111 11 11</a>
-                        </li>
-                        <li class="mobile-menu__mail">
-                            <a href="mailto:info@devstudio.com" class="mob-men-mail">info@devstudio.com</a>
-                        </li>
-                    </ul>
-                    <ul class="mobile-menu__social-list">
-                        <li class="mobile-menu__social-item">
-                            <a href="" class="mobile-menu__social-link">Instagram</a>
-                        </li>
-                        <li class="mobile-menu__social-item">
-                            <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">Twitter</a>
-                        </li>
-                        <li class="mobile-menu__social-item">
-                            <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">Facebook</a>
-                        </li>
-                        <li class="mobile-menu__social-item">
-                            <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">LinkedIn</a>
-                        </li>
-                    </ul>
+                    <div class="mobile-menu__wrapper">
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__phone">
+                                <a href="tel:+380961111111" class="mob-men-tel">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__mail">
+                                <a href="mailto:info@devstudio.com" class="mob-men-mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__social-list">
+                            <li class="mobile-menu__social-item">
+                                <a href="" class="mobile-menu__social-link">Instagram</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">Twitter</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">Facebook</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a href="" class="mobile-menu__social-link mobile-menu__social-link-stick">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -102,7 +105,6 @@
                     <!--Фильтр в главном разделе-->               
                     <h1 class="visually-hidden">Группировка образцов по тематике</h1>
                     <ul class="filter-list">
-                        <span class="filter-list__wrapper1">
                             <li class="filter-list__item">
                                 <button class="filter-list__btn filter-list__first-btn" type="button">Все</button>
                             </li>
@@ -112,32 +114,29 @@
                             <li class="filter-list__item">
                                 <button class="filter-list__btn" type="button">Приложения</button>
                             </li>
-                        </span>                        
-                        <span class="filter-list__wrapper2">
                             <li class="filter-list__item">
                                 <button class="filter-list__btn" type="button">Дизайн</button>
                             </li>
                             <li class="filter-list__item">
                                 <button class="filter-list__btn" type="button">Маркетинг</button>
                             </li>
-                        </span>
                     </ul> 
             
                     <!--Варианты портфолио-->
                     <ul class="examples-list">
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
-                                <div class="item-up-part">
-                                    <!-- <picture>
-                                        <source srcset="./images/content/technokr-mobile.webp 1x, ./images/content/technokr-mobile@2x.webp 2x" type="image/webp" media="(max-width: 480px)/>
-                                        <source srcset="./images/content/technokr-mobile.jpg 1x, ./images/content/technokr-mobile@2x.jpg 2x" type="image/jpeg" media="(max-width: 480px)/>
-                                        <source srcset="./images/content/technokr-tablet.webp 1x, ./images/content/technokr-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)/>
-                                        <source srcset="./images/content/technokr-tablet.jpg 1x, ./images/content/technokr-tablet@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)/>
-                                        <source srcset="./images/content/technokr-desktop.webp 1x, ./images/content/technokr-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)/>
-                                        <source srcset="./images/content/technokr-desktop.jpg 1x, ./images/content/technokr-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)/>
+                                <div class="item-up-part">                                   
+                                    <picture>
+                                        <source srcset="./images/content/technokr-mobile.webp 1x, ./images/content/technokr-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)" />
+                                        <source srcset="./images/content/technokr-mobile.jpg 1x, ./images/content/technokr-mobile@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                                        <source srcset="./images/content/technokr-tablet.webp 1x, ./images/content/technokr-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                                        <source srcset="./images/content/technokr-tablet.jpg 1x, ./images/content/technokr-tablet@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                                        <source srcset="./images/content/technokr-desktop.webp 1x, ./images/content/technokr-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                                        <source srcset="./images/content/technokr-desktop.jpg 1x, ./images/content/technokr-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>                                        
                                         <img src="./images/content/technokr-mobile.jpg" alt="Ноутбук с веб-сайтом" class="examples-list-img"/>
-                                    </picture> -->
-                                    <img srcset="./images/content/technokr-mobile.jpg 1x, ./images/content/technokr-mobile@2x.jpg 2x" class="examples-list-img" src="./images/content/technokr-mobile.jpg" alt="Ноутбук с веб-сайтом">
+                                    </picture>
+                                    <!-- <img srcset="./images/content/technokr-mobile.jpg 1x, ./images/content/technokr-mobile@2x.jpg 2x" class="examples-list-img" src="./images/content/technokr-mobile.jpg" alt="Ноутбук с веб-сайтом">-->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">
@@ -150,12 +149,16 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <!-- <picture>
-                                        <source srcset="./images/content/poster-mobile.webp 1x, ./images/content/poster-mobile@2x.webp 2x" type="image/webp" media="(max-width: 480px)/>
-                                        <source srcset="./images/content/poster-mobile.jpg 1x, ./images/content/poster-mobile@2x.jpg 2x" type="image/jpeg" media="(max-width: 480px)/>
+                                    <picture>
+                                        <source srcset="./images/content/poster-mobile.webp 1x, ./images/content/poster-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                                        <source srcset="./images/content/poster-mobile.jpg 1x, ./images/content/poster-mobile@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                                        <source srcset="./images/content/poster-tablet.webp 1x, ./images/content/poster-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/poster-tablet.jpg 1x, ./images/content/poster-tablet@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/poster-desktop.webp 1x, ./images/content/poster-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/poster-desktop.jpg 1x, ./images/content/poster-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
                                         <img src="./images/content/poster-mobile.jpg" alt="Игра в баскетбол" class="examples-list-img" />
-                                    </picture> -->
-                                    <img class="examples-list-img" src="./images/content/poster-mobile.jpg" alt="Игра в баскетбол">                                    
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/poster-mobile.jpg" alt="Игра в баскетбол"> -->                                    
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">
@@ -167,7 +170,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/seafood-mobile.jpg" alt="Логотип ресторана">
+                                    <picture>
+                                        <source srcset="./images/content/seafood-mobile.webp 1x, ./images/content/seafood-mobile@2x.webp 2x" type="image/webp"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/seafood-mobile.jpg 1x, ./images/content/seafood-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/seafood-tablet.webp 1x, ./images/content/seafood-tablet@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/seafood-tablet.jpg 1x, ./images/content/seafood-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/seafood-desktop.webp 1x, ./images/content/seafood-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/seafood-desktop.jpg 1x, ./images/content/seafood-desktop@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 1200px)" />
+                                        <img src="./images/content/seafood-mobile.jpg" alt="Логотип ресторана" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/seafood-mobile.jpg" alt="Логотип ресторана"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                                         посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -180,7 +198,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/prime-mobile.jpg" alt="Наушники">
+                                    <picture>
+                                        <source srcset="./images/content/prime-mobile.webp 1x, ./images/content/prime-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)" />
+                                        <source srcset="./images/content/prime-mobile.jpg 1x, ./images/content/prime-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/prime-tablet.webp 1x, ./images/content/prime-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/prime-tablet.jpg 1x, ./images/content/prime-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/prime-desktop.webp 1x, ./images/content/prime-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/prime-desktop.jpg 1x, ./images/content/prime-desktop@2x.jpg 2x"
+                                            type="image/jpeg" media="(min-width: 1200px)" />
+                                        <img src="./images/content/prime-mobile.jpg" alt="Наушники" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/prime-mobile.jpg" alt="Наушники"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -193,7 +226,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/boxes-mobile.jpg" alt="Две картонные коробки">
+                                    <picture>
+                                        <source srcset="./images/content/boxes-mobile.webp 1x, ./images/content/boxes-mobile@2x.webp 2x" type="image/webp"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/boxes-mobile.jpg 1x, ./images/content/boxes-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/boxes-tablet.webp 1x, ./images/content/boxes-tablet@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/boxes-tablet.jpg 1x, ./images/content/boxes-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/boxes-desktop.webp 1x, ./images/content/boxes-desktop@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/boxes-desktop.jpg 1x, ./images/content/boxes-desktop@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 1200px)" />
+                                        <img src="./images/content/boxes-mobile.jpg" alt="Две картонные коробки" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/boxes-mobile.jpg" alt="Две картонные коробки"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -206,7 +254,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/inspiration-mobile.jpg" alt="Компьютерный монитор">
+                                    <picture>
+                                        <source srcset="./images/content/inspiration-mobile.webp 1x, ./images/content/inspiration-mobile@2x.webp 2x" type="image/webp"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/inspiration-mobile.jpg 1x, ./images/content/inspiration-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/inspiration-tablet.webp 1x, ./images/content/inspiration-tablet@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/inspiration-tablet.jpg 1x, ./images/content/inspiration-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/inspiration-desktop.webp 1x, ./images/content/inspiration-desktop@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/inspiration-desktop.jpg 1x, ./images/content/inspiration-desktop@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 1200px)" />
+                                        <img src="./images/content/inspiration-mobile.jpg" alt="Компьютерный монитор" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/inspiration-mobile.jpg" alt="Компьютерный монитор"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">
@@ -218,7 +281,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/limited-mobile.jpg" alt="Разворот журнала">
+                                    <picture>
+                                        <source srcset="./images/content/limited-mobile.webp 1x, ./images/content/limited-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)" />
+                                        <source srcset="./images/content/limited-mobile.jpg 1x, ./images/content/limited-mobile@2x.jpg 2x"
+                                            type="image/jpeg" media="(max-width: 767px)" />
+                                        <source srcset="./images/content/limited-tablet.webp 1x, ./images/content/limited-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/limited-tablet.jpg 1x, ./images/content/limited-tablet@2x.jpg 2x"
+                                            type="image/jpeg" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/limited-desktop.webp 1x, ./images/content/limited-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/limited-desktop.jpg 1x, ./images/content/limited-desktop@2x.jpg 2x"
+                                            type="image/jpeg" media="(min-width: 1200px)" />
+                                        <img src="./images/content/limited-mobile.jpg" alt="Разворот журнала" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/limited-mobile.jpg" alt="Разворот журнала"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">
@@ -230,7 +308,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/lab-mobile.jpg" alt="Бирка для одежды">
+                                    <picture>
+                                        <source srcset="./images/content/lab-mobile.webp 1x, ./images/content/lab-mobile@2x.webp 2x"
+                                            type="image/webp" media="(max-width: 767px)" />
+                                        <source srcset="./images/content/lab-mobile.jpg 1x, ./images/content/lab-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/lab-tablet.webp 1x, ./images/content/lab-tablet@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 768px)" />
+                                        <source srcset="./images/content/lab-tablet.jpg 1x, ./images/content/lab-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/lab-desktop.webp 1x, ./images/content/lab-desktop@2x.webp 2x"
+                                            type="image/webp" media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/lab-desktop.jpg 1x, ./images/content/lab-desktop@2x.jpg 2x"
+                                            type="image/jpeg" media="(min-width: 1200px)" />
+                                        <img src="./images/content/lab-mobile.jpg" alt="Бирка для одежды" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/lab-mobile.jpg" alt="Бирка для одежды"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">
@@ -242,7 +335,22 @@
                         <li class="examples-list__item">
                             <a class="examples-list__link" href="">
                                 <div class="item-up-part">
-                                    <img class="examples-list-img" src="./images/content/growing-mobile.jpg" alt="Работа на ноутбуке">
+                                    <picture>
+                                        <source srcset="./images/content/growing-mobile.webp 1x, ./images/content/growing-mobile@2x.webp 2x" type="image/webp"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/growing-mobile.jpg 1x, ./images/content/growing-mobile@2x.jpg 2x" type="image/jpeg"
+                                            media="(max-width: 767px)" />
+                                        <source srcset="./images/content/growing-tablet.webp 1x, ./images/content/growing-tablet@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/growing-tablet.jpg 1x, ./images/content/growing-tablet@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 768px)" />
+                                        <source srcset="./images/content/growing-desktop.webp 1x, ./images/content/growing-desktop@2x.webp 2x" type="image/webp"
+                                            media="(min-width: 1200px)" />
+                                        <source srcset="./images/content/growing-desktop.jpg 1x, ./images/content/growing-desktop@2x.jpg 2x" type="image/jpeg"
+                                            media="(min-width: 1200px)" />
+                                        <img src="./images/content/growing-mobile.jpg" alt="Работа на ноутбуке" class="examples-list-img" />
+                                    </picture>
+                                    <!-- <img class="examples-list-img" src="./images/content/growing-mobile.jpg" alt="Работа на ноутбуке"> -->
                                     <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                                 <div class="item-down-part">

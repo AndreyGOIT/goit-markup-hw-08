@@ -10,13 +10,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 30px;
 }
 
-.our-advantages__item {
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 30px;
-}
 .our-advantages__title {
     font-weight: 700;
     font-size: 14px;
@@ -52,12 +48,9 @@
 // 768- планшеты
 @media screen and (min-width: 768px) {
     .our-advantages__item {
-        flex-basis: calc((100% - 30px) / 2);
-        gap: 30px;
+        flex-basis: calc((100% - 30px) / 2);   
     }
-    .our-advantages__item:nth-child(2n+1) {
-        margin-right: 30px;
-    }
+  
     .our-advantages__title {
         justify-content: flex-start;
     }
@@ -66,13 +59,10 @@
 @media screen and (min-width: 1200px) {
     .our-advantages__item {
         width: 270px;
-        gap: 30px;
     }
     .our-advantages__list {
         display: flex;
         flex-wrap: nowrap;
     }
-    .our-advantages__item:not(:last-child) {
-        margin-right: 30px;
-    }
+  
 }
