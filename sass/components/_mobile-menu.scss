@@ -25,8 +25,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding: 48px 40px;
     }
     
     .mobile-menu__close-btn {
@@ -42,12 +41,6 @@
         &:focus {
             fill: #2196F3;
         }
-    }
-
-    .mobile-menu__list,
-    .mobile-menu__contacts,
-    .mobile-menu__social-list {
-        margin-left: 10px;
     }
     
     .mobile-menu__list {
