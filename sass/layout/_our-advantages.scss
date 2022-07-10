@@ -2,10 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.our-advantages__container {
-    padding-left: 0;
-    padding-right: 0;
-}
+
 .our-advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,13 +47,16 @@
     .our-advantages__item {
         flex-basis: calc((100% - 30px) / 2);   
     }
-  
     .our-advantages__title {
         justify-content: flex-start;
     }
 }
 // 1200 - десктопы
 @media screen and (min-width: 1200px) {
+    .our-advantages {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     .our-advantages__item {
         width: 270px;
     }

@@ -64,13 +64,11 @@
     }
     .our-clients-list {
         flex-wrap: nowrap;
-        gap: 0px;
+        gap: 30px;
     }
     .our-clients-list__item {
         width: 170px;
         height: 92px;
     }
-    .our-clients-list__item:not(:last-child) {
-        margin-right: 30px;
-    }
+
 }

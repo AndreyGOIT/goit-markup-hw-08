@@ -1,7 +1,4 @@
-.our-occupation__container {
-    padding-left: 0;
-    padding-right: 0;
-}
+
 // 0-1199px мобильные устройства и планшеты
 @media screen and (max-width: 1199px) {
     .our-occupation {
@@ -13,6 +10,7 @@
 @media screen and (min-width: 1200px) {
     .our-occupation {
         padding-top: 0px;
+        padding-bottom: 94px;
     }
     
     .our-occupation__list,
