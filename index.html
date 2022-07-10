@@ -159,19 +159,37 @@
                 <ul class="our-occupation__list">
                     <li class="our-occupation__item">
                         <div class="our-occupation__thumb">
-                            <img src="./images/work/desktop-apps.jpg"  alt="работа за компьютером" class="our-occupation__img"/>
+                            <picture>                                
+                                <source srcset="./images/work/desktop-apps.webp 1x, ./images/work/desktop-apps@2x.webp 2x"
+                                    type="image/webp" media="(min-width: 1200px)" />
+                                <source srcset="./images/work/desktop-apps.jpg 1x, ./images/work/desktop-apps@2x.jpg 2x"
+                                    type="image/jpeg" media="(min-width: 1200px)" />
+                                <img src="./images/work/desktop-apps.jpg" alt="работа за компьютером" class="our-occupation__img" />
+                            </picture>
                             <p class="our-occupation__label">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="our-occupation__item">
                         <div class="our-occupation__thumb">
-                            <img src="./images/work/mobile-apps.jpg" alt="разработка приложений" width="370" height="295">
+                            <picture>
+                                <source srcset="./images/work/mobile-apps.webp 1x, ./images/work/mobile-apps@2x.webp 2x" type="image/webp"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/work/mobile-apps.jpg 1x, ./images/work/mobile-apps@2x.jpg 2x" type="image/jpeg"
+                                    media="(min-width: 1200px)" />
+                                <img src="./images/work/mobile-apps.jpg" alt="разработка приложений" class="our-occupation__img" />
+                            </picture>
                             <p class="our-occupation__label">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="our-occupation__item">
                         <div class="our-occupation__thumb">
-                            <img src="./images/work/design-solutions.jpg" alt="работа палитрой цветов" width="370" height="295">
+                            <picture>
+                                <source srcset="./images/work/design-solutions.webp 1x, ./images/work/design-solutions@2x.webp 2x" type="image/webp"
+                                    media="(min-width: 1200px)" />
+                                <source srcset="./images/work/design-solutions.jpg 1x, ./images/work/design-solutions@2x.jpg 2x" type="image/jpeg"
+                                    media="(min-width: 1200px)" />
+                                <img src="./images/work/design-solutions.jpg" alt="работа палитрой цветов" class="our-occupation__img" />
+                            </picture>
                             <p class="our-occupation__label">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -186,7 +204,16 @@
                 <h2 class="our-team__main-title">Наша команда</h2>
                 <ul class="our-team__list">
                     <li class="our-team__item">
-                        <img class="img-main" src="./images/team/demian-mobile.jpg" alt="Игорь">
+                        <picture>
+                            <source srcset="./images/team/demian-mobile.webp 1x, ./images/team/demian-mobile@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+                            <source srcset="./images/team/demian-mobile.jpg 1x, ./images/team/demian-mobile@2x.jpg 2x" type="image/jpeg" media="(max-width: 767px)"/>
+                            <source srcset="./images/team/demian-tablet.webp 1x, ./images/team/demian-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)"/>
+                            <source srcset="./images/team/demian-tablet.jpg 1x, ./images/team/demian-tablet@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)"/>
+                            <source srcset="./images/team/demian-desktop.webp 1x, ./images/team/demian-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)"/>
+                            <source srcset="./images/team/demian-desktop.jpg 1x, ./images/team/demian-desktop@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)"/>
+                            <img src="./images/team/demian-mobile.jpg" alt="Игорь" class="our-team__img"/>
+                        </picture>
+                        <!-- <img class="our-team__img" src="./images/team/demian-mobile.jpg" alt="Игорь"> -->
                         <div class="our-team__text-block">
                             <h3 class="our-team__text-block-title">Игорь Демьяненко</h3>
                             <p class="our-team__text-block-text" lang="en">Product Designer</p> 
@@ -220,11 +247,25 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                        
+                        </div>                        
                     </li>
                     <li class="our-team__item">
-                        <img class="img-main" src="./images/team/repina-mobile.jpg" alt="Ольга">
+                        <picture>
+                            <source srcset="./images/team/repina-mobile.webp 1x, ./images/team/repina-mobile@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/repina-mobile.jpg 1x, ./images/team/repina-mobile@2x.jpg 2x" type="image/jpeg"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/repina-tablet.webp 1x, ./images/team/repina-tablet@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/repina-tablet.jpg 1x, ./images/team/repina-tablet@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/repina-desktop.webp 1x, ./images/team/repina-desktop@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/repina-desktop.jpg 1x, ./images/team/repina-desktop@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/team/repina-mobile.jpg" alt="Ольга" class="our-team__img" />
+                        </picture>
+                        <!-- <img class="img-main" src="./images/team/repina-mobile.jpg" alt="Ольга"> -->
                         <div class="our-team__text-block">
                             <h3 class="our-team__text-block-title">Ольга Репина</h3>
                             <p class="our-team__text-block-text" lang="en">Frontend Developer</p>
@@ -261,7 +302,22 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img-main" src="./images/team/tarasov-mobile.jpg" alt="Николай">
+                        <picture>
+                            <source srcset="./images/team/tarasov-mobile.webp 1x, ./images/team/tarasov-mobile@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/tarasov-mobile.jpg 1x, ./images/team/tarasov-mobile@2x.jpg 2x" type="image/jpeg"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/tarasov-tablet.webp 1x, ./images/team/tarasov-tablet@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tarasov-tablet.jpg 1x, ./images/team/tarasov-tablet@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/tarasov-desktop.webp 1x, ./images/team/tarasov-desktop@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/tarasov-desktop.jpg 1x, ./images/team/tarasov-desktop@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/team/tarasov-mobile.jpg" alt="Николай" class="our-team__img" />
+                        </picture>
+                        <!-- <img class="img-main" src="./images/team/tarasov-mobile.jpg" alt="Николай"> -->
                         <div class="our-team__text-block">
                             <h3 class="our-team__text-block-title">Николай Тарасов</h3>
                             <p class="our-team__text-block-text" lang="en">Marketing</p>
@@ -298,7 +354,22 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img-main" src="./images/team/ermakov-mobile.jpg" alt="Михаил">
+                        <picture>
+                            <source srcset="./images/team/ermakov-mobile.webp 1x, ./images/team/ermakov-mobile@2x.webp 2x" type="image/webp"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/ermakov-mobile.jpg 1x, ./images/team/ermakov-mobile@2x.jpg 2x" type="image/jpeg"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/team/ermakov-tablet.webp 1x, ./images/team/ermakov-tablet@2x.webp 2x" type="image/webp"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/ermakov-tablet.jpg 1x, ./images/team/ermakov-tablet@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/team/ermakov-desktop.webp 1x, ./images/team/ermakov-desktop@2x.webp 2x" type="image/webp"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/team/ermakov-desktop.jpg 1x, ./images/team/ermakov-desktop@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/team/ermakov-mobile.jpg" alt="Михаил" class="our-team__img" />
+                        </picture>
+                        <!-- <img class="img-main" src="./images/team/ermakov-mobile.jpg" alt="Михаил"> -->
                         <div class="our-team__text-block">
                             <h3 class="our-team__text-block-title">Михаил Ермаков</h3>
                             <p class="our-team__text-block-text" lang="en">UI Designer</p>

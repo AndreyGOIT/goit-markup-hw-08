@@ -114,6 +114,9 @@
 }
 
 /*-- секция подписки --*/
+.subscription-section {
+    width: 100%;
+}
 .subscription-section-form {
     display: flex;
     flex-direction: column;
@@ -160,8 +163,21 @@
     padding-right: 28px;
     border: transparent;
 }
+@media screen and (max-width: 767px) {
+    .bottom-left-side {
+        margin-bottom: 60px;
+    }
+    .subscription-section-form__input {
+        width: 100%;
+    }
+}
 // 768 - планшеты
 @media screen and (min-width: 768px) {
+    .logo-bottom {
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .bottom-sides-wrapper {
         display: flex;
         justify-content: space-around;
@@ -191,6 +207,11 @@
         margin-left: 0px;
         margin-right: 70px;
         margin-bottom: 0px;
+    }
+    .logo-bottom {
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .address-list {
         display: flex;

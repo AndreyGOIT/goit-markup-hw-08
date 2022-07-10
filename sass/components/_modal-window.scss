@@ -40,7 +40,15 @@
 // 1200 - десктопы
 @media screen and (min-width: 1200px) {
     .modal {
-        width: 528px;
+        display: block;
+        justify-content: center;
+        position: absolute;
+        padding: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 528px;
         height: 581px;
+        background-color: #FFFFFF;
     }
 }

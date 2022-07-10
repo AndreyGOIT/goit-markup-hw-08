@@ -3,18 +3,6 @@
     flex-direction: column;
 }
 
-.contact-form__title {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    color: #212121;
-}
-
 .contact-form__field {
     display: flex;
     flex-direction: column;
@@ -144,7 +132,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -159,4 +146,39 @@
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+@media screen and (max-width: 1199px) {
+    .contact-form__title {
+        display: block;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        color: #212121;
+    }
+    .modal__checkbox {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal__checkbox {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    .contact-form__title {
+        display: block;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        color: #212121;
+    }
+        
 }
