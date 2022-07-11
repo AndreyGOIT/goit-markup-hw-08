@@ -81,11 +81,11 @@
     border-left-color: var(--portfolio-border-line);
 }
 // до 767 - мобилки
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .examples-list-img {
         max-width: 767px;
     }
-}
+} */
 // 768 - планшеты
 @media screen and (min-width: 768px) {
     .examples-list {

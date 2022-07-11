@@ -2,7 +2,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .our-clients-title {
     font-size: 28px;
     line-height: 1.18;
@@ -15,7 +14,8 @@
     gap: 30px;
 }
 .our-clients-list__item {
-    width: 210px;
+    flex-basis: calc((100% - 30px) / 2);
+    /* width: 210px; */
     height: 92px;
 }
 .our-clients-list__icon {

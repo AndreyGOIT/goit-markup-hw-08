@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .logo-black {
     color: var(--text-logo-black);
@@ -69,6 +70,7 @@
     }
     .navigation__list-item:not(:last-child) {
         margin-right: 50px;
+        position: relative;
     }
     
     /*--подчеркивание  и подсвечивание текущей страницы--*/
@@ -85,6 +87,7 @@
         background-color: var(--accent-color);
     }
     .navigation__list-link {
+        height: 100%;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
