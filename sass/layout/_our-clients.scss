@@ -50,6 +50,11 @@
     .our-clients-list__item {
         width: 226px;
     }
+    .our-clients-list__item {
+        flex-basis: calc((100% - 60px) / 3);
+        /* width: 210px; */
+        /* height: 92px; */
+    }
 }
 // 1200 - десктопы
 @media screen and (min-width: 1200px) {
